@@ -5,7 +5,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class GestorArchivo {
-
     public void guardarEstadisticas(List<Jugador> jugadores) {
         try (FileOutputStream fileOutputStream = new FileOutputStream("estadisticas.dat");
              ObjectOutputStream objectOutputStream = new ObjectOutputStream(fileOutputStream)) {
@@ -26,4 +25,3 @@ public class GestorArchivo {
         return jugadores;
     }
 }
-
