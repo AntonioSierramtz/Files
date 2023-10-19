@@ -1,6 +1,8 @@
 package pokemonadivinaquien;
 
-public class Jugador {
+import java.io.Serializable;
+
+public class Jugador implements Serializable {
     private String nombre;
     private int juegosJugados;
     private int juegosGanados;
